@@ -1,0 +1,50 @@
+---
+import Card from "@/components/Card.astro";
+
+const PROJECTS = [
+  {
+    id: "1",
+    name: "Barro",
+    img: "https://images.squarespace-cdn.com/content/v1/52e6cb06e4b001bcbe5683a3/1700595963235-R517DRATRMGU9OTH8VY8/BARRO+003.png?format=750w",
+  },
+  {
+    id: "2",
+    name: "Barro",
+    img: "https://images.squarespace-cdn.com/content/v1/52e6cb06e4b001bcbe5683a3/1700595963235-R517DRATRMGU9OTH8VY8/BARRO+003.png?format=750w",
+  },
+  {
+    id: "3",
+    name: "Barro",
+    img: "https://images.squarespace-cdn.com/content/v1/52e6cb06e4b001bcbe5683a3/1700595963235-R517DRATRMGU9OTH8VY8/BARRO+003.png?format=750w",
+  },
+  {
+    id: "4",
+    name: "Barro",
+    img: "https://images.squarespace-cdn.com/content/v1/52e6cb06e4b001bcbe5683a3/1700595963235-R517DRATRMGU9OTH8VY8/BARRO+003.png?format=750w",
+  },
+  {
+    id: "5",
+    name: "Barro",
+    img: "https://images.squarespace-cdn.com/content/v1/52e6cb06e4b001bcbe5683a3/1700595963235-R517DRATRMGU9OTH8VY8/BARRO+003.png?format=750w",
+  },
+  {
+    id: "6",
+    name: "Barro",
+    img: "https://images.squarespace-cdn.com/content/v1/52e6cb06e4b001bcbe5683a3/1700595963235-R517DRATRMGU9OTH8VY8/BARRO+003.png?format=750w",
+  },
+  {
+    id: "7",
+    name: "Barro",
+    img: "https://images.squarespace-cdn.com/content/v1/52e6cb06e4b001bcbe5683a3/1700595963235-R517DRATRMGU9OTH8VY8/BARRO+003.png?format=750w",
+  },
+];
+---
+
+<section class="grid grid-cols-2 md:grid-cols-3 mx-auto gap-4">
+  {PROJECTS.map(({ name, img }) => <Card names={name} imgs={img} />)}
+</section>
+<style>
+  section {
+    width: 90%;
+  }
+</style>
